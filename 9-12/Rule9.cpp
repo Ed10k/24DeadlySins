@@ -1,7 +1,8 @@
 /**
  * @file Rule9.cpp
  * @author Lane Plummer
- * @brief Catching Exceptions example
+ * @brief   Catching Exceptions example that shows how to handle exceptions thrown instead of ignored or grouped together too 
+ *          vaguely
  * @version 0.1
  * @date 2024-04-10
  * 
