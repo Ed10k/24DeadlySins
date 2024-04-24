@@ -46,4 +46,6 @@ int main()
     else{
         cout<<" not within the integer range. \n";
     }
+
+    return 0;
 }
