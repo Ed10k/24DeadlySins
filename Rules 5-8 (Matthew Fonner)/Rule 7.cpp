@@ -20,14 +20,16 @@ int main()
 {
     //produces random numberseed
     srand(time(nullptr));
-    int num = rand()% INT_MAX;
+
+    //Ensure you are aware of the data type and its bounds. Also be aware of any casting if present.
+    int num = rand() % INT_MAX;
     cout<<"Number 1: " << num<<'\n';
     int num2 = rand()% INT_MAX;
     cout<<"Number 2: " << num2<<'\n';
 
     // adds two numbers together to see if it is within valid range
     cout<< "The sum of the two numbers is ";
-    if(num + num2 < INT_MAX)
+    if(num + num2 < INT_MAX) //check if sum is within bounds before performing operation
     {
         cout << num+num2 << " and within the integer range.\n";
     }
@@ -37,7 +39,7 @@ int main()
 
     //subtracts two numbers to see if its within valid range
     cout<<"The difference of the two numbers is ";
-    if(num-num2 > INT_MIN)
+    if(num-num2 > INT_MIN) //checks if difference is within bounds before performing operation
     {
         cout << num-num2 << " and within the integer range.\n";
     }
@@ -45,4 +47,5 @@ int main()
         cout<<" not within the integer range. \n";
     }
 
+    return 0;
 }
