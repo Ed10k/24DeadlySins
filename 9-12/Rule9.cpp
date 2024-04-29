@@ -23,10 +23,21 @@ void divide(int a, int b){
 int main(){
     int dividend, divisor;
 
-    std::cout << "Enter dividend:";
+    std::cout << "Enter whole number dividend:";
     std::cin >> dividend;
-    std::cout << "Enter divisor:";
+
+    if(std::cin.fail()) {
+        std::cerr << "Whole number not entered." << std::endl;
+        return 0;
+    }
+
+    std::cout << "Enter whole number divisor:";
     std::cin >> divisor;
+
+    if(std::cin.fail()){
+        std::cerr << "Whole number not entered." << std::endl;
+        return 0;
+    }
 
     try{
         //Attempt the division
