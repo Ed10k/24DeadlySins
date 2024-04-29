@@ -24,7 +24,7 @@ int main()
     //string to copy from
     string str2;
     cout<<"Please enter the string you wish you copy: ";
-    cin>>str2;
+    getline(cin,str2);
 
     //convert 2nd string into c string
     const char* str3 = str2.c_str();
